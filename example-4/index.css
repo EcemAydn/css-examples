@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset css */
+
+
+html, body{
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    font-family: 'Inter', 'Courier New', Courier, monospace;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(235, 221, 220);
+    overflow: auto;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: 70px;
+}
+.header, .header-item{
+    display:flex;
+    gap:30px;
+}
+.header, .header-item a{
+    text-decoration: none;
+    color: black;
+}
+.header-item a:hover{
+    color: rgb(255, 115, 0);
+}
+.page{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr auto;   
+    gap:20px;
+    padding: 200px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    margin:0;
+}
+.nav{
+    display: grid;
+    grid-column: 1/3;
+}
+.nav, img{
+    width: 100%;
+    height: 100%;
+}
+.aside{
+    background-color: black; 
+    grid-column: 3/4;
+    grid-row: 1/3;
+    padding: 30px;
+}
+.aside h2 {
+    font-size: 30px;
+    color: orange;
+    font-weight: bold;
+}
+.aside a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+}
+.aside a:hover{
+    color:orange;
+}
+.aside p {
+    font-size: 20px;
+    color: grey;
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 700;
+}
+.read{
+    font-size: 24px;
+}
+.read p{
+    color:black;
+}
+.read a{
+    display: block;
+    margin-top: 28px;
+    background-color: rgb(255, 106, 0);
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 6px;
+    padding: 13px 15px;
+}
+.read a:hover{
+    background-color: black;
+}
+.footer{
+    display:flex;
+    justify-content: space-around;
+    margin:0px 160px 40px 160px;
+    font-size: 15px;
+    color: rgb(142, 141, 141);
+}
+.line-clamp-4{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.line-clamp-2{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+.footer img{
+    width: 100px;
+    height: 150px;   
+}
+.footer h3{
+    font-size: 30px;
+    
+}
+.footer .card-1{
+    display: flex;
+    width: 300px;
+    gap:30px;
+}
+.footer .card-2{
+    display: flex;
+    width: 300px;
+    gap:30px;
+}
+.footer .card-3{
+    display: flex;
+    width: 300px;
+    gap:30px;
+}
+.footer a{
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+.footer a:hover{
+    color: rgb(250, 106, 3);
+}
