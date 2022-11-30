@@ -1,0 +1,79 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.page{
+   display: flex;
+   height: 100%;
+   width: 100%;
+}
+.set{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;   
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+}
+.text h1{
+    font-size: 70px;
+    width: 100%;
+    text-align: left;
+}
+.set .background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 100%;
+}
+.image, img{
+    margin:0px;
+    padding:0px;
+    height:100%;
+}
+.mail{
+    display: flex;
+    margin-top: 100px;
+    background: white;
+    border:2px solid;
+    border-color: rgb(190, 176, 137);    
+    width: 100%;
+    border-radius: 30px;
+    position: relative;
+}
+.mail .btn{
+    border: 2px solid;
+    border-color: rgb(255, 0, 204);
+    background-color: rgb(157, 42, 165);
+    padding: 10px 60px;
+    position: absolute;
+    right: 0;
+    top:0;
+    height: 100%;
+    border-radius: 30px;
+}
+.email{
+    border: 0;
+    padding:15px 20px;  
+    width: 100%;
+    border-radius: 30px; 
+}
+.error {
+    border:2px solid red;
+}
