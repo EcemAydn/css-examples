@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    width: 100%;
+    height: 100%;
+	background-color: hsl(222, 26%, 31%);
+}
+.calculator{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 10px;
+	font-weight: bold;
+}
+header{
+	display: flex;
+    justify-content: space-between;
+	width: 400px;
+	color: white;	
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.header-name{
+	font-size: 30px;
+	font-weight: bold;
+}
+.header-theme{
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+}
+.header-theme h3{
+	padding-bottom: 3px;
+}
+.header-button {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+.header-button .num{
+	display: flex;
+	justify-content: space-around;
+}
+.header-button button{
+	padding: 10px;
+	border: 0px;
+	border-radius: 10px;
+	background-color: white;
+	opacity: 80%;
+	cursor: pointer;
+}
+.btn{
+	background-color: white;
+	border-radius: 10px;
+	opacity: 80%;
+	padding-bottom: 2px;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+.header-button button:hover{
+	background-color: hsl(25, 98%, 40%);
+
+}
+.text input{
+	color: white;
+	width: 400px;
+	height: 80px;
+	text-align: right;
+	font-size: 40px;
+	border:0px solid;
+	border-radius: 10px;
+	background-color: hsl(224, 36%, 15%);
+	font-weight: bold;
+}
+.key {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 380px;
+	background-color: hsl(224, 36%, 15%);
+	gap: 2px;
+	border-radius: 10px;
+}
+.key button{
+	font-size: 30px;
+	padding: 12px;	
+	width: 80px;
+	margin-left: 14px;
+	margin-top: 10px;
+	background-color: white;
+	box-shadow: rgba(248, 248, 248, 0.15) 1.95px 1.95px 2.6px;
+	border-radius: 10px;
+	font-weight: bold;
+	cursor: pointer;
+	opacity: 70%;
+
+}
+.res button{
+	width: 178px;
+	color: white;
+}
+.key button:hover{
+	opacity: 100%;
+}
+
+
